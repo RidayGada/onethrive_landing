@@ -1,0 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  overflow-x: hidden;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#app-root {
+  position: relative;
+}
+
+#main {
+  position: relative;
+  z-index: 2;
+}
+
+#nav {
+  height: 80px;
+  background-color: #28F7B3;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#nav img {
+  height: 60px;
+  width: 140px;
+  border-radius: 40px;
+}
+
+#nav2 {
+  display: flex;
+  gap: 25px;
+  font-size: 18px;
+}
+
+#nav2 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#nav2 a:hover {
+  color: white;
+}
+
+.page-section {
+  min-height: 100vh;
+  padding: 80px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page-section h1 {
+  font-size: 2.5rem;
+  color: #28F7B3;
+  margin-bottom: 20px;
+}
+
+.page-section p {
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  color: #28F7B3;
+  margin-bottom: 8px;
+}
